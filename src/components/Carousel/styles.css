@@ -1,0 +1,11 @@
+.swiper-pagination-bullet {
+  background-color: #fff;
+  width: 4rem;
+  border-radius: 0;
+  height: 0.25rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
