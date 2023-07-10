@@ -8,10 +8,12 @@ interface IHeaderProps {
 
 export function Header({ setFilteredInput }: IHeaderProps) {
   const [localInput, setLocalInput] = useState("");
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setFilteredInput(localInput);
   };
+  
   return (
     <header className="bg-black w-full flex sm:flex-row flex-col md:justify-between font-sans">
       <div className="flex flex-row items-center gap-10 md:w-auto w-full md:justify-start justify-between mr-4 py-4 px-6">
